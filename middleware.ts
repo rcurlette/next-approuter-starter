@@ -7,5 +7,5 @@ export const config = {
   matcher: [
     "/((?!api|_next/static|_next/image|favicon.ico|sitemap.xml|robots.txt).*)",
   ],
-  runtime: "experimental-edge",
+  // Removed edge runtime to enable full caching capabilities with Uniform
 };
