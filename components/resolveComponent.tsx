@@ -5,12 +5,16 @@ import {
 
 import { HeroComponent } from "./hero";
 import { Page } from "./page";
+import { BentoBoxComponent } from "./bento-box";
+import { BentoBoxItemComponent } from "./bento-box-item";
 import { ComponentProps } from "@uniformdev/next-app-router/component";
 
 // Register components here: key = component type, value = React component
 const componentRegistry: Record<string, ComponentType<any>> = {
   page: Page,
   hero: HeroComponent,
+  bentoBox: BentoBoxComponent,
+  bentoBoxItem: BentoBoxItemComponent,
 };
 
 export const resolveComponent: ResolveComponentFunction = ({ component }) => {

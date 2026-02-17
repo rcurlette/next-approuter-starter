@@ -9,6 +9,7 @@
     "push": "uniform sync push"
   },
   "dependencies": {
+    "@uniformdev/canvas": "^20.49.4",
     "@uniformdev/next-app-router": "20.49.2",
     "@uniformdev/next-app-router-client": "20.49.2",
     "next": "^16.1.6",
