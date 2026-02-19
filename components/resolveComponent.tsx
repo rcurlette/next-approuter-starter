@@ -4,6 +4,7 @@ import {
 } from "@uniformdev/next-app-router";
 
 import { HeroComponent } from "./hero";
+import { FeatureBlockComponent } from "./feature-block";
 import { Page } from "./page";
 import { ComponentProps } from "@uniformdev/next-app-router/component";
 
@@ -11,6 +12,7 @@ import { ComponentProps } from "@uniformdev/next-app-router/component";
 const componentRegistry: Record<string, ComponentType<any>> = {
   page: Page,
   hero: HeroComponent,
+  featureBlock: FeatureBlockComponent,
 };
 
 export const resolveComponent: ResolveComponentFunction = ({ component }) => {
