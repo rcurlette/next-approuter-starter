@@ -1,11 +1,10 @@
 import {
-  AssetParamValue,
   ComponentParameter,
   ComponentProps,
   UniformRichText,
   UniformText,
-  flattenValues,
 } from "@uniformdev/next-app-router/component";
+import { AssetParamValue, flattenValues } from "@uniformdev/canvas";
 
 export type FeatureBlockProps = {
   headline: ComponentParameter<string>;

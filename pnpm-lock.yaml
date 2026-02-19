@@ -8,6 +8,9 @@ importers:
 
   .:
     dependencies:
+      '@uniformdev/canvas':
+        specifier: ^20.50.0
+        version: 20.50.0
       '@uniformdev/next-app-router':
         specifier: 20.49.2
         version: 20.49.2(immer@10.1.3)(next@16.1.6(react-dom@19.2.4(react@19.2.4))(react@19.2.4))(react-dom@19.2.4(react@19.2.4))(react@19.2.4)
@@ -696,6 +699,9 @@ packages:
   '@uniformdev/assets@20.49.2':
     resolution: {integrity: sha512-wo31GQM/ITRJA/sM90GVFDrr2bnNpv3oYgygplS9Tc6W+2DOD7uPL9m29TB+8+3ILYgtD0OZ8qVfe2C+upPFkg==}
 
+  '@uniformdev/assets@20.50.0':
+    resolution: {integrity: sha512-OSuDwGF78MMVWBYNVabaqwMgSQRog3rM13T2YJViBMcuSYzI02+QXpKLETU7fXAtNrKzSGSsQ88H7J1HpnaQ2w==}
+
   '@uniformdev/canvas-react@20.49.2':
     resolution: {integrity: sha512-KEOakpKnAQkRKQFV/qa09OMqI0x7tpn7clS19I3B11yWvhQYLqMVXAkxg/kH/m3+/PeHyTATLC8wLnF0eAd2ng==}
     peerDependencies:
@@ -705,6 +711,9 @@ packages:
 
   '@uniformdev/canvas@20.49.2':
     resolution: {integrity: sha512-A1upFt5K8D1e5wKyiU9kHCZP5mrdym2QwTBGoEVTohdFiLAAX0Tavu51YkdjOfmhNsS0WYV5/WPcEFdeAygTOw==}
+
+  '@uniformdev/canvas@20.50.0':
+    resolution: {integrity: sha512-wlcofQYnI25YuHwJqnX4SeAQRHIBqtJ6e/zNuhgfqN1FeXjrzhvFnKsCb2D5QYb9YjjkB07sPMMu8E/PBd0JRQ==}
 
   '@uniformdev/cli@20.49.2':
     resolution: {integrity: sha512-jcUJ1w5+1k1NRE602vEI4cMulbpT7QB0HlDAZRV5RXg7FXeoSvRtdQvbxMp9YYHJgk22NAqM2Y4rK/KVD4vyRA==}
@@ -718,6 +727,9 @@ packages:
 
   '@uniformdev/context@20.49.2':
     resolution: {integrity: sha512-ljCkIwaydElxs3SWr7QE8XuIq4sQniYceRWwp4HH8Ch81cqjrgmVZ98J5XiqhLZYBm9ySyaIY7Xf+7OmZeTfAQ==}
+
+  '@uniformdev/context@20.50.0':
+    resolution: {integrity: sha512-g0ZctjRP4TDOGM3gIQMZYnndF4dMLxuYEotNllbXf2uvW1JZjrxKmZ7bBJ5gbcQKdaf2seX6diw8EvZzvGl+Gw==}
 
   '@uniformdev/files@20.49.2':
     resolution: {integrity: sha512-YD5uLPxqTy0QmWjsS2mp3oPghBnc0RDAJ5nbw5gl3RKyySnpnLffNYzzTX3QItzLTzK5SpIfPZl2jBRxoOGaWg==}
@@ -754,6 +766,9 @@ packages:
 
   '@uniformdev/richtext@20.49.2':
     resolution: {integrity: sha512-2izXSsDPZ57IONstUIqxQTyBvMSq98Gop+LhWj1PGPOZDuUxSsh3fqA2uK2pKgzmvw/Q9pkk+IxMbgpAn1fVDA==}
+
+  '@uniformdev/richtext@20.50.0':
+    resolution: {integrity: sha512-RSqbyYdcSwGA+TWae68+8T5c08YueNLawehPtTIMuyKtPOR20Wc1oey4kQmU8lm+48FagRO/wCTVKj/WpjI+HA==}
 
   '@uniformdev/webhooks@20.49.2':
     resolution: {integrity: sha512-Lx3XNGkE7tBx8OdGYLgaU3c5IkyNWGZBk26GN7t2iYp0xTbuNQcxHL0nHoJEZ3neGp9ZKthL0UVXYAVUr7QQVA==}
@@ -2232,6 +2247,10 @@ snapshots:
     dependencies:
       '@uniformdev/context': 20.49.2
 
+  '@uniformdev/assets@20.50.0':
+    dependencies:
+      '@uniformdev/context': 20.50.0
+
   '@uniformdev/canvas-react@20.49.2(immer@10.1.3)(react-dom@19.2.4(react@19.2.4))(react@19.2.4)':
     dependencies:
       '@uniformdev/canvas': 20.49.2
@@ -2247,6 +2266,13 @@ snapshots:
       '@uniformdev/assets': 20.49.2
       '@uniformdev/context': 20.49.2
       '@uniformdev/richtext': 20.49.2
+      immer: 10.1.3
+
+  '@uniformdev/canvas@20.50.0':
+    dependencies:
+      '@uniformdev/assets': 20.50.0
+      '@uniformdev/context': 20.50.0
+      '@uniformdev/richtext': 20.50.0
       immer: 10.1.3
 
   '@uniformdev/cli@20.49.2(@types/node@20.19.33)(encoding@0.1.13)(typescript@5.9.3)':
@@ -2311,6 +2337,14 @@ snapshots:
       p-limit: 3.1.0
       rfdc: 1.4.1
 
+  '@uniformdev/context@20.50.0':
+    dependencies:
+      dequal: 2.0.3
+      js-cookie: 3.0.5
+      mitt: 3.0.1
+      p-limit: 3.1.0
+      rfdc: 1.4.1
+
   '@uniformdev/files@20.49.2':
     dependencies:
       '@uniformdev/context': 20.49.2
@@ -2368,6 +2402,8 @@ snapshots:
       rfdc: 1.4.1
 
   '@uniformdev/richtext@20.49.2': {}
+
+  '@uniformdev/richtext@20.50.0': {}
 
   '@uniformdev/webhooks@20.49.2':
     dependencies:
