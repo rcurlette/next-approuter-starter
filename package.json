@@ -2,7 +2,7 @@
   "name": "@uniformdev/next-app-router-starter",
   "version": "2.0.0",
   "scripts": {
-    "dev": "next dev",
+    "dev": "next dev --no-turbopack",
     "build": "next build",
     "start": "next start",
     "pull": "uniform sync pull",
