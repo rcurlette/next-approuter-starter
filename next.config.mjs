@@ -1,6 +1,7 @@
+// @ts-check
 import { withUniformConfig } from "@uniformdev/next-app-router/config";
-import type { NextConfig } from "next";
 
-const nextConfig: NextConfig = {};
+/** @type {import('next').NextConfig} */
+const nextConfig = {};
 
 export default withUniformConfig(nextConfig);
