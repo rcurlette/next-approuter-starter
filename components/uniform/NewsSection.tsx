@@ -22,7 +22,7 @@ export const NewsSection = ({
   component,
 }: ComponentProps<NewsSectionProps, NewsSectionSlots>) => {
   const linkValue = viewAllLink?.value;
-  const url = linkValue?.path || linkValue?.href || "/news";
+  const url = linkValue?.path || (linkValue as { href?: string })?.href || "/news";
 
   return (
     <section id="news" className="py-20 bg-card">

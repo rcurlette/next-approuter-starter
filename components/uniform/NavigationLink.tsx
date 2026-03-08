@@ -16,7 +16,7 @@ export const NavigationLink = ({
   component,
 }: ComponentProps<NavigationLinkProps>) => {
   const linkValue = href?.value;
-  const url = linkValue?.path || linkValue?.href || "#";
+  const url = linkValue?.path || (linkValue as { href?: string })?.href || "#";
 
   return (
     <Link

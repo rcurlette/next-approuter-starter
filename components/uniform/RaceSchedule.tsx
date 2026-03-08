@@ -22,7 +22,7 @@ export const RaceSchedule = ({
   component,
 }: ComponentProps<RaceScheduleProps, RaceScheduleSlots>) => {
   const linkValue = viewAllLink?.value;
-  const url = linkValue?.path || linkValue?.href || "#full-calendar";
+  const url = linkValue?.path || (linkValue as { href?: string })?.href || "#full-calendar";
 
   return (
     <section id="races" className="py-20 bg-background">

@@ -22,7 +22,7 @@ export const DriversSection = ({
   component,
 }: ComponentProps<DriversSectionProps, DriversSectionSlots>) => {
   const linkValue = viewAllLink?.value;
-  const url = linkValue?.path || linkValue?.href || "#standings";
+  const url = linkValue?.path || (linkValue as { href?: string })?.href || "#standings";
 
   return (
     <section id="drivers" className="py-20 bg-card">

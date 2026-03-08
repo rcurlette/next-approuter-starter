@@ -36,8 +36,8 @@ export const HeroSection = ({
   const image = flattenValues(heroImage?.value, { toSingle: true });
   const primaryLink = primaryCtaLink?.value;
   const secondaryLink = secondaryCtaLink?.value;
-  const primaryUrl = primaryLink?.path || primaryLink?.href || "#races";
-  const secondaryUrl = secondaryLink?.path || secondaryLink?.href || "#drivers";
+  const primaryUrl = primaryLink?.path || (primaryLink as { href?: string })?.href || "#races";
+  const secondaryUrl = secondaryLink?.path || (secondaryLink as { href?: string })?.href || "#drivers";
 
   return (
     <section className="relative min-h-screen flex items-center justify-center overflow-hidden pt-16">
