@@ -19,13 +19,20 @@ export function Header() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
-          <Link href="/" className="flex items-center gap-2">
-            <div className="w-8 h-8 bg-primary rounded flex items-center justify-center">
-              <span className="text-primary-foreground font-bold text-sm">CG</span>
+          <Link href="/" className="flex items-center gap-3">
+            <svg viewBox="0 0 40 40" className="w-8 h-8" aria-hidden="true">
+              <path d="M20 4L8 12v16l12 8 12-8V12L20 4z" fill="#4F8FEA"/>
+              <path d="M20 4L8 12l12 8 12-8-12-8z" fill="#7CB3F0"/>
+              <path d="M20 20l12-8v16l-12 8V20z" fill="#E53935"/>
+            </svg>
+            <div className="flex flex-col leading-none">
+              <span className="font-heading text-lg tracking-wide text-foreground">
+                COMPOSABLE GP
+              </span>
+              <span className="text-xs text-muted-foreground tracking-widest">
+                by uniform
+              </span>
             </div>
-            <span className="font-heading text-xl tracking-wide text-foreground">
-              COMPOSABLE GP
-            </span>
           </Link>
 
           {/* Desktop Navigation */}

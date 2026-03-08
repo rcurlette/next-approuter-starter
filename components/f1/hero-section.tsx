@@ -34,14 +34,21 @@ export function HeroSection() {
         <div className="relative w-full max-w-4xl mx-auto mb-10">
           <div className="relative aspect-[16/9] rounded-lg overflow-hidden border border-border bg-[#0f172a]">
             <img
-              src="/images/hero-composable-car.jpg"
-              alt="The Composable Racing Car - Modular components that assemble into a championship-winning machine"
+              src="/images/uniform-racing-car.jpg"
+              alt="Uniform Racing UR-26 - The championship-winning composable racing machine"
               className="w-full h-full object-contain"
             />
             <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-[#0f172a] to-transparent p-4">
-              <p className="text-sm text-muted-foreground uppercase tracking-wider">
-                Featured: Composable GP UR-26 — Every Component Matters
-              </p>
+              <div className="flex items-center justify-center gap-3">
+                <svg viewBox="0 0 40 40" className="w-6 h-6" aria-hidden="true">
+                  <path d="M20 4L8 12v16l12 8 12-8V12L20 4z" fill="#4F8FEA"/>
+                  <path d="M20 4L8 12l12 8 12-8-12-8z" fill="#7CB3F0"/>
+                  <path d="M20 20l12-8v16l-12 8V20z" fill="#E53935"/>
+                </svg>
+                <p className="text-sm text-muted-foreground uppercase tracking-wider">
+                  Uniform Racing UR-26 — Composable DXP Powered
+                </p>
+              </div>
             </div>
           </div>
         </div>
