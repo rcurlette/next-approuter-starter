@@ -1,6 +1,9 @@
+import Link from "next/link";
+
 const newsArticles = [
   {
     id: 1,
+    slug: "uniform-racing-composable-aero-package",
     title: "Uniform Racing Unveils Revolutionary Composable Aero Package",
     excerpt: "The new front wing design uses modular components that can be swapped mid-race, giving teams unprecedented flexibility.",
     category: "Technology",
@@ -11,6 +14,7 @@ const newsArticles = [
   },
   {
     id: 2,
+    slug: "max-composable-takes-pole",
     title: "Max Composable Takes Pole in Stunning Qualifying Session",
     excerpt: "The championship leader set a blistering lap time, outpacing his rivals by over half a second.",
     category: "Race Weekend",
@@ -21,6 +25,7 @@ const newsArticles = [
   },
   {
     id: 3,
+    slug: "stack-solutions-technical-partnership",
     title: "Stack Solutions Announces Major Technical Partnership",
     excerpt: "The team has signed a multi-year deal with a leading headless CMS provider to optimize their data infrastructure.",
     category: "Teams",
@@ -31,6 +36,7 @@ const newsArticles = [
   },
   {
     id: 4,
+    slug: "component-racing-factory-tour",
     title: "Behind the Scenes: How Component Racing Builds Their Cars",
     excerpt: "An exclusive look at the factory where modular engineering meets racing excellence.",
     category: "Features",
@@ -73,7 +79,7 @@ export function NewsSection() {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
           {/* Featured Article */}
           {featured && (
-            <div className="lg:row-span-2 group">
+            <Link href={`/news/${featured.slug}`} className="lg:row-span-2 group">
               <article className="relative h-full bg-background rounded-lg overflow-hidden border border-border hover:border-primary/50 transition-colors">
                 <div className="relative h-64 lg:h-80 overflow-hidden">
                   <img
@@ -98,14 +104,15 @@ export function NewsSection() {
                   <p className="text-muted-foreground">{featured.excerpt}</p>
                 </div>
               </article>
-            </div>
+            </Link>
           )}
 
           {/* Regular Articles */}
           <div className="flex flex-col gap-6">
             {regular.map((article) => (
-              <article
+              <Link
                 key={article.id}
+                href={`/news/${article.slug}`}
                 className="group flex gap-4 bg-background rounded-lg overflow-hidden border border-border hover:border-primary/50 transition-colors"
               >
                 <div className="relative w-32 sm:w-40 flex-shrink-0 overflow-hidden">
@@ -128,7 +135,7 @@ export function NewsSection() {
                     <span>{article.readTime}</span>
                   </div>
                 </div>
-              </article>
+              </Link>
             ))}
           </div>
         </div>
