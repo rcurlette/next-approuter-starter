@@ -6,7 +6,7 @@ const drivers = [
     points: 312,
     wins: 8,
     country: "Netherlands",
-    image: "/placeholder.svg?height=400&width=300",
+    image: "/images/driver-max.jpg",
     teamColor: "#dc2626",
   },
   {
@@ -16,7 +16,7 @@ const drivers = [
     points: 287,
     wins: 6,
     country: "United Kingdom",
-    image: "/placeholder.svg?height=400&width=300",
+    image: "/images/driver-lewis.jpg",
     teamColor: "#0ea5e9",
   },
   {
@@ -26,7 +26,7 @@ const drivers = [
     points: 245,
     wins: 4,
     country: "Monaco",
-    image: "/placeholder.svg?height=400&width=300",
+    image: "/images/driver-charles.jpg",
     teamColor: "#f59e0b",
   },
   {
@@ -36,7 +36,7 @@ const drivers = [
     points: 221,
     wins: 3,
     country: "Spain",
-    image: "/placeholder.svg?height=400&width=300",
+    image: "/images/driver-carlos.jpg",
     teamColor: "#f59e0b",
   },
   {
@@ -46,7 +46,7 @@ const drivers = [
     points: 198,
     wins: 2,
     country: "United Kingdom",
-    image: "/placeholder.svg?height=400&width=300",
+    image: "/images/driver-lando.jpg",
     teamColor: "#f97316",
   },
 ];

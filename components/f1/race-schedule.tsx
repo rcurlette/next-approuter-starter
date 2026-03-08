@@ -7,6 +7,7 @@ const races = [
     date: "MAR 14-16",
     status: "completed",
     winner: "Max Composable",
+    image: "/images/circuit-melbourne.jpg",
   },
   {
     round: 2,
@@ -16,6 +17,7 @@ const races = [
     date: "MAR 21-23",
     status: "completed",
     winner: "Lewis Headless",
+    image: "/images/circuit-jeddah.jpg",
   },
   {
     round: 3,
@@ -24,6 +26,7 @@ const races = [
     circuit: "Suzuka International Racing Course",
     date: "APR 4-6",
     status: "upcoming",
+    image: "/images/circuit-suzuka.jpg",
   },
   {
     round: 4,
@@ -32,6 +35,7 @@ const races = [
     circuit: "Shanghai International Circuit",
     date: "APR 18-20",
     status: "upcoming",
+    image: "/images/circuit-shanghai.jpg",
   },
   {
     round: 5,
@@ -40,6 +44,7 @@ const races = [
     circuit: "Miami International Autodrome",
     date: "MAY 2-4",
     status: "upcoming",
+    image: "/images/circuit-miami.jpg",
   },
 ];
 
@@ -87,6 +92,7 @@ interface Race {
   date: string;
   status: string;
   winner?: string;
+  image: string;
 }
 
 function RaceCard({ race }: { race: Race }) {
@@ -97,7 +103,7 @@ function RaceCard({ race }: { race: Race }) {
       {/* Background Image */}
       <div className="relative h-48 bg-gradient-to-br from-muted to-card overflow-hidden">
         <img
-          src={`/placeholder.svg?height=200&width=400`}
+          src={race.image}
           alt={race.circuit}
           className="w-full h-full object-cover opacity-50 group-hover:opacity-70 transition-opacity"
         />

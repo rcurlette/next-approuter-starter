@@ -6,7 +6,7 @@ const newsArticles = [
     category: "Technology",
     date: "Mar 8, 2026",
     readTime: "4 min read",
-    image: "/placeholder.svg?height=300&width=500",
+    image: "/images/news-aero.jpg",
     featured: true,
   },
   {
@@ -16,7 +16,7 @@ const newsArticles = [
     category: "Race Weekend",
     date: "Mar 7, 2026",
     readTime: "3 min read",
-    image: "/placeholder.svg?height=200&width=350",
+    image: "/images/news-qualifying.jpg",
     featured: false,
   },
   {
@@ -26,7 +26,7 @@ const newsArticles = [
     category: "Teams",
     date: "Mar 6, 2026",
     readTime: "2 min read",
-    image: "/placeholder.svg?height=200&width=350",
+    image: "/images/news-partnership.jpg",
     featured: false,
   },
   {
@@ -36,7 +36,7 @@ const newsArticles = [
     category: "Features",
     date: "Mar 5, 2026",
     readTime: "6 min read",
-    image: "/placeholder.svg?height=200&width=350",
+    image: "/images/news-factory.jpg",
     featured: false,
   },
 ];
