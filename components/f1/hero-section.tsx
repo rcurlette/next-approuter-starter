@@ -32,15 +32,15 @@ export function HeroSection() {
 
         {/* Featured Car Image */}
         <div className="relative w-full max-w-4xl mx-auto mb-10">
-          <div className="relative aspect-[16/9] rounded-lg overflow-hidden border border-border bg-card">
+          <div className="relative aspect-[16/9] rounded-lg overflow-hidden border border-border bg-[#0f172a]">
             <img
-              src="https://v0.blob.core.windows.net/v0-user-uploads/cGFzdGVkX2ltYWdlXzE3NDA0MzIyMjI5NTA.png"
-              alt="The Uniform Racing Car - A sleek composable racing machine"
-              className="w-full h-full object-contain p-4"
+              src="/images/hero-composable-car.jpg"
+              alt="The Composable Racing Car - Modular components that assemble into a championship-winning machine"
+              className="w-full h-full object-contain"
             />
-            <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-card to-transparent p-4">
+            <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-[#0f172a] to-transparent p-4">
               <p className="text-sm text-muted-foreground uppercase tracking-wider">
-                Featured: Uniform Racing UR-26
+                Featured: Composable GP UR-26 — Every Component Matters
               </p>
             </div>
           </div>
